@@ -1,31 +1,28 @@
-📌 Project 1 — PageRank via Eigenvectors, Power Iteration & Random Walks
+📘 Numerical Linear Algebra for Data Science & Machine Learning
 
-This project implements the PageRank algorithm using three different mathematical formulations, providing a deep comparison of their numerical behavior.
+A collection of projects applying numerical linear algebra techniques to real-world data science and machine learning problems.
 
-Methods Implemented
+🔍 Overview
 
-Eigenvector method using numpy.linalg.eig
+This repository contains four applied projects demonstrating how numerical linear algebra supports modern data science, machine learning, and data mining tasks.
+Each project implements core linear algebra algorithms from scratch and applies them to real datasets such as EMNIST, MNIST, and 20 Newsgroups.
 
-Power iteration method for efficient iterative approximation
+Techniques explored include:
 
-Random walk / Markov chain formulation to obtain the stationary distribution
+Eigenvalue problems
 
-Handling of dangling nodes, column normalization, and teleportation (damping factor)
+Power iteration
 
-Analysis of convergence, computational complexity, and stability
+QR decomposition (Householder & incremental Givens)
 
-Dataset
+Nonnegative Matrix Factorization (NMF)
 
-Berkeley–Stanford Web Graph (Matrix Market format)
+Principal Component Analysis (PCA)
 
-Loaded via scipy.io.mmread, processed into a directed graph using NetworkX
+t-SNE
 
-Key Results
+Clustering metrics (ARI, AMI, Silhouette)
 
-Comparison of top PageRank nodes across all methods
+Sparse matrix operations
 
-Effect of damping factor α on stability and ranking
-
-Discussion of why eigenvector and iterative solutions may slightly differ
-
-Evaluation of runtime: O(n³) for eigen-decomposition vs O(kn²) for power iteration
+Graph algorithms (PageRank)
